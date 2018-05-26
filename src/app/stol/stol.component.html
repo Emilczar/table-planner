@@ -1,0 +1,27 @@
+<div id="plan01">
+  <div id="pole01">
+    <div *ngFor="let item of db.stol0_1; let i = index">
+      <div class="pozycja01">
+        <div class="kolo">
+          <div class="rotacja pole_drop"  [dropEnabled]="lockDrop(i,db.stol0_1)" [dragEnabled]="lockDrag(i,db.stol0_1)" (onDrop)="onItemDrop($event, i, db.stol0_1)"
+          draggable droppable [dragData]="{name: item, index: i, db: 'stol0_1'}" >{{item}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="stol"></div>
+  <div id="pole02">
+    <div  *ngFor="let item of db.stol0_2; let i = index">
+      <div class="pozycja02" >
+          <div class="kolo">
+              <div class="rotacja1  pole_drop"    [dropEnabled]="lockDrop(i,db.stol0_2)" [dragEnabled]="lockDrag(i,db.stol0_2)" (onDrop)="onItemDrop($event, i, db.stol0_2)"
+              draggable droppable [dragData]="{name: item, index: i, db: 'stol0_2'}" > {{item}}</div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

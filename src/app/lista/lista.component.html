@@ -1,0 +1,11 @@
+<div class="lista">
+    <div  *ngFor="let item of db.lista; let i  = index">
+
+        <div class="test" [dropEnabled]="lockDrop(i,db.lista)" [dragEnabled]="lockDrag(i,db.lista)" (onDrop)="onItemDrop($event, i, db.lista)"
+          draggable droppable [dragData]="{name: item, index: i, db: 'lista'}">{{item}}
+        </div>
+      </div>
+
+</div>
+
+

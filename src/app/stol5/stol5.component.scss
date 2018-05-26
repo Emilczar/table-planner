@@ -1,0 +1,93 @@
+$width-pole: 180px;
+$height-pole: 295px;
+$width-poleDrop: 155px;
+$height-poleDrop: 20px;
+$width-stol: 40px;
+
+.kolo {
+  width: 18px;
+  height: 18px;
+  border: 1px solid black;
+  border-radius: 100%;
+   margin: 2.5px 0;
+}
+
+
+// plan01 - stanowisko stolu pary młodej
+#plan01 {
+  width: $width-pole*2 + $width-stol;
+  height: $height-pole;
+  background: aquamarine;
+  position: relative;
+  border: 1px solid  black
+}
+
+// pole01 - pozycja przy stole prawa strona
+#pole01 {
+  width: $width-pole;
+  height: $height-pole;
+  position: absolute;
+  background: beige;
+
+}
+// pole02 - pozycja przy stole lewa strona
+#pole02 {
+  left: 220px;
+  width: $width-pole;
+  height: $height-pole;
+  position: absolute;
+  background: beige;
+}
+
+// ustawienie pozycji
+.pozycja01 {
+  position: relative;
+  left: 160px;
+}
+.pozycja02 {
+  position: relative;
+}
+.pole_drop01 {
+  width: $width-poleDrop;
+  height: $height-poleDrop;
+  position: relative;
+  left: -160px;
+  text-align: right;
+
+}
+
+.pole_drop02 {
+  width: $width-poleDrop;
+  height: $height-poleDrop;
+  margin-left: 20px;
+
+}
+
+// obracanie tekstu
+.rotacja {
+ // transform: rotate(-90deg);
+ // transform-origin: left top ;
+  position: relative;
+  margin-top: -5px;
+
+}
+.rotacja1 {
+  //transform: rotate(90deg);
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 18px;
+  //transform-origin: left top;
+  }
+
+.stol {
+  width: 40px;
+  height: $height-pole;
+  left: 180px;
+  background: rgb(51, 79, 79);
+  position: absolute;
+
+
+}
+
+
+

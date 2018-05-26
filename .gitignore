@@ -44,4 +44,5 @@ testem.log
 Thumbs.db
 
 src/assets/lista.json
-src/environments/environment.ts
+src/assets/Kopia gosci.json
+src/assets/file.json
